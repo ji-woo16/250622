@@ -1,0 +1,259 @@
+.logo-img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 130vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/background.jpg') center/cover;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: white;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    /* ← 왼쪽 공간 주기 */
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.logo-text {
+    display: flex;
+    gap: 1px;
+    /* '목원대학교'와 '컴퓨터공학과' 사이 간격 */
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.school-name {
+    margin-left: -12px;
+    font-size: 23px;
+    font-weight: bold;
+    color: white;
+    margin-right: 10px;
+    font-family: 'Nanum Myeongjo', serif;
+    letter-spacing: -2px;
+}
+
+.school-name-wrap {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+    align-items: flex-start;
+}
+
+.school-name-en {
+    font-family: 'Times New Roman', serif;
+    font-size: 10px;
+    margin-top: 1px;
+    margin-left: -10px;
+    letter-spacing: 0.3px;
+    font-weight: 1;
+    letter-spacing: -0.8px;
+}
+
+.pc-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.site-header {
+    background-color: transparent;
+
+}
+
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.main-nav {
+    margin-top: 18px;
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%);
+    z-index: 10;
+    /* 추가: 다른 요소보다 위로 올라오게 */
+}
+
+.main-nav .nav-list {
+    display: flex;
+    gap: 63px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav .nav-list a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    display: inline-block;
+}
+
+.main-nav .nav-list a:hover {
+    color: #CD002D;
+}
+
+.nav-list {
+    display: flex;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    /* 줄바꿈 방지 */
+}
+
+.extra-menu {
+    position: absolute;
+    margin-top: -36px;
+    right: 40px;
+    display: flex;
+    gap: 7px;
+    margin-right: -15px;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 10px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin-right: 7px;
+}
+
+.menu-item img {
+    height: 20px;
+    margin-bottom: 4px;
+}
+
+.menu-item.burger img {
+    height: 35px;
+}
+
+.menu-item.mokwon-view {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+    font-weight: bold;
+}
+
+.mokwon-view {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+}
+
+.mokwon-view .text {
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+}
+
+.mokwon-view .badge {
+    background-color: #CD002D;
+    color: white;
+    border-radius: 50%;
+    font-size: 14px;
+    padding: 4px 8px;
+}
+
+.mokwon-view .dot {
+    color: #CD002D;
+    font-size: 24px;
+    margin-left: -4px;
+}
+
+.main-banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    bottom: 100px;
+}
+
+.main-slogan {
+    font-family: 'Exo', sans-serif;
+    font-weight: 900;
+    font-size: 64px;
+    color: white;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.main-icons {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* 반투명 배경 */
+    padding: 30px 0;
+    color: white;
+    flex-wrap: wrap;
+    margin-top: -250px;
+    /* 위아래 패딩만 */
+    max-width: 1200px;
+    /* ✅ 최대 너비 설정 */
+    margin: -250px auto 0;
+    /* ✅ 가운데 정렬 */
+    gap: 20px;
+    justify-content: center;
+}
+
+.icon-box {
+    width: 120px;
+    height: 120px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* ✅ 세로 가운데 정렬 */
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    margin: 0 20px;
+}
+
+.icon-box:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    transform: scale(1.08);
+    /* ✅ 살짝 확대 */
+    cursor: pointer;
+}
+
+.icon-box img {
+    width: 48px;
+    /* ✅ 적당한 크기로 고정 */
+    height: 48px;
+    margin-bottom: 10px;
+    object-fit: contain;
+    /* 아이콘 비율 유지 */
+}
+
+.icon-box p {
+    font-size: 14px;
+    text-align: center;
+    margin: 0;
+    /* 불필요한 여백 제거 */
+}
